@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: la-min-paing-bot
+    env: python
+    region: singapore
+    branch: main
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python la_min_paing_bot.py"
+    plan: free
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
