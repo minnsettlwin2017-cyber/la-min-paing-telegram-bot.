@@ -1,1 +1,0 @@
-web: python la_min_paing_bot.py
